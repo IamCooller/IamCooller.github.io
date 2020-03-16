@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Мое портфолио</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="http://allfont.ru/allfont.css?fonts=franklin-gothic-demi-cond" rel="stylesheet" type="text/css" />
+  
+  
+  <title>CyberFoxes</title>
 </head>
 <body>
+
+ <!-- Навигация! её не трогай, а то поломаешь -->
+   <nav id="header menu" class="navMenu fixed-top">
+    <div class="navList">
+      <div class="nav_left">
+        <ul class="nav_left__list">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Главная</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">О нас</a></li>
+      </ul>
+      </div>
+      
+      <div class="nav_right">
+        <ul class="nav_right__list">
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Наши работы</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Контакты</a></li>
+      </ul>
+      </div>
+    </div>
+      
+     
     
-    <header class="page-header">
-        <div class="container">
-            <div class="theam">
-           <a href="light theme/index.html"> <img class="light" src="img/open-light.svg"></a>
-           <a href="pro-light-theme/index.html"> <img class="two-light" src="img/open-light.svg"></a>
-            <a href="/index.html"><img class="dark" src="img/dark.svg"></a>
-           <a href="pro-dark-theme/index.html"><img class="two-dark" src="img/dark.svg"></a>
-            </div>
-            <a class="header-email" href ="mohovilya2000@gmail.com"> mohovilya2000@gmail.com </a>
-            <a class="header-phone" href="https://t.me/Ilya_Cooller"> +380 990 86 39 62 </a>
-        </div>
-    </header>
-    <section class="hero-image">
-        <div class="container ">
-            <h1 class="heading">Неопознанный Лис</h1>
-            <p>Junior верстальщик</p>
-        </div>
-    </section>
-    <!-- Добавить якори -->
-    <!--Добавить кнопку перехода с темной темы на светлую-->
-
-        
-            <section class="intro">
-                <div class="container">
-            <h2 class="heading" style="text-align: center; margin-bottom: 100px;">Давайте познакомимся</h2>   
-            <figure class="user-image">
-                <img src="files/user.jpg"  width="928" height="536"  alt="Фотография Неопознанного Енота">
-              </figure>
-
-              <div>
-              <h3>Пара слово себе</h3>
-              <p>Здесь будет краткая биография.</p>
-              </div>
-              <div>
-                  <h3> Чем могу быть полезен</h3>
-                  <p>Здесь будет описание моих преимуществ.</p>
-              </div>
-
-              <div class="skills">
-                <h3>Мои навыки</h3>
-                <dl class="skills-list">
-                  <dt class="skill-html">HTML</dt>
-                  <dd class="level"><div style="width: 60%;">60%</div></dd>
-                  <dt class="skill-css">CSS</dt>
-                  <dd class="level"><div style="width: 40%;">40%</div></dd>
-                </dl>
-              </div>
+  </nav>
 
 
-            </div>
-        </section>
-       
+  <!-- Тут начинается сам сайт -->
+  <div id="fullpage">
+    <header class="section"> 
+        <div class="main_img">
+          <img src="assets/img/ellipse.png" alt="ellipse" class="ellipse_one">
+          <img src="assets/img/triangle.png" alt="triangle" class="triangle">
+          <img src="assets/img/fox.png" alt="fox" class="fox">
+      </div>
 
-    <section>
-        <div class="container">
+      <div class="main_title">
+        <h1>CyberFoxes</h1>
+        <p class="title">Добро пожаловать</p>
+        <a href="#" class="btn">Связаться</a>
+      </div>
 
-            <h2 class="heading" style="text-align: center; margin-bottom: 100px;">Мои работы</h2>
-            <figure class="project-image">
-                <img src="files/project.jpg"  width="928" height="536"  alt="Cайт инструктора Кекса">
-              </figure>
-              <div class="button-align">
-              <a class="button" href="/project/index.html" style="justify-content: center;">Открыть страницу</a>
-                </div>
-            </div>
-        
-    </section>
+    </header><!-- Тут первая страница -->
+    <div class="section container"> Второй раздел </div><!-- Тут вторая страница -->
+    <div class="section container"> Третий раздел </div><!-- Тут третья страница -->
+    <div class="section container"> Четвертый раздел </div><!-- Тут четвертая страница -->
+  </div>
+  <!-- Конец сайта -->
 
 
-    <footer class="page-footer">
-        <div class="container">
-          <a class="footer-email" href="mohovilya2000@gmail.com">mohovilya2000@gmail.com</a>
-          <a class="footer-phone" href="https://t.me/Ilya_Cooller">+380 990 86 39 62</a>
-        </div>
-      </footer>
+
+
+
+<script src="assets/js/fullpage/fullpage.min.js"></script> 
+<script src="assets/js/jquery/jquery-3.4.1.min.js"></script> 
+<script src="app.js"></script> 
 </body>
 </html>
